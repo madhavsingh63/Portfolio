@@ -1,0 +1,44 @@
+.profile_picture {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    animation: profileAnimation 7s ease-in-out 0s infinite normal none running;
+}
+
+@keyframes profileAnimation {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+.rotateAnimationImage {
+    animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* .mobileNavbar{
+    animation: animateFromLeft 4s linear ease;
+}
+
+@keyframes animateFromLeft {
+    0%{
+        transform: translateX(0);
+        transform-origin: left;
+    }
+    100%{
+        transform: translateX(100%);
+        transform-origin: left;
+    }
+} */
